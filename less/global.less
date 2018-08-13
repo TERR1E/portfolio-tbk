@@ -1,0 +1,29 @@
+body {
+	background-color: #f6f6f6;
+  color: #343434;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
+  background-color: #f6f6f6;
+
+  @media @mobile {
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    background-color: #f6f6f6;
+  }
+}
+
+.sticky + main {
+  padding-top: 60px;
+
+  @media @mobile {
+    padding-top: 0;
+  }
+}

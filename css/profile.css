@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: #f6f6f6;
+  color: #343434;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
+  background-color: #f6f6f6;
+}
+@media (max-width: 400px) {
+  .sticky {
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    background-color: #f6f6f6;
+  }
+}
+.sticky + main {
+  padding-top: 60px;
+}
+@media (max-width: 400px) {
+  .sticky + main {
+    padding-top: 0;
+  }
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+header h1 {
+  display: none;
+}
+@media (max-width: 400px) {
+  header h1 {
+    display: flex;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: -55px 0;
+  }
+}
+header .logo {
+  width: 150px;
+  height: 50px;
+}
+@media (max-width: 400px) {
+  header .logo {
+    display: none;
+  }
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav .nav {
+  background-color: #f6f6f6;
+}
+nav .nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding: 25px 0;
+  border: solid #e9e9e9;
+  border-width: 1px 0 1px 0;
+  width: 1100px;
+  background-color: #f6f6f6;
+}
+nav .nav ul .nav-link {
+  text-decoration: none;
+  color: #343434;
+  padding: 20px 20px;
+}
+nav .nav ul .nav-link:hover {
+  color: #757575;
+}
+nav .nav ul .dropdown:hover .nav-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+nav .nav ul .dropdown .nav-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  margin: 20px -55px;
+  width: 200px;
+  border: solid #e9e9e9;
+  border-width: 2px 0 0 0;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+nav .nav ul .dropdown .nav-dropdown .dropdown-link {
+  align-self: center;
+  padding: 20px 80px 20px 81px;
+  border: solid #e9e9e9;
+  border-width: 1px 0 0 0;
+  text-decoration: none;
+  color: #343434;
+}
+nav .nav ul .dropdown .nav-dropdown .dropdown-link:hover {
+  background-color: #343434;
+  color: #f6f6f6;
+}
+@media (max-width: 400px) {
+  nav .nav ul .dropdown .nav-dropdown {
+    margin: 20px 0 20px 100px;
+  }
+}
+@media (max-width: 768px) {
+  nav .nav ul {
+    width: 700px;
+  }
+}
+@media (max-width: 400px) {
+  nav .nav ul {
+    margin: -80px 0 -40px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 400px;
+    border: 1px 0 0 0;
+  }
+  nav .nav ul li {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 15px 0;
+    width: 400px;
+    border: solid #e9e9e9;
+    border-width: 0 0 1px 0;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+footer .copyright {
+  text-align: center;
+  padding: 25px 0;
+  border: solid #e9e9e9;
+  border-width: 1px 0 1px 0;
+  width: 1100px;
+}
+@media (max-width: 768px) {
+  footer .copyright {
+    width: 700px;
+  }
+}
+@media (max-width: 400px) {
+  footer .copyright {
+    width: 400px;
+  }
+}
+footer a {
+  text-decoration: none;
+  color: #343434;
+}

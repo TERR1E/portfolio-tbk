@@ -132,6 +132,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   letter-spacing: 2px;
   font-size: 12px;
+  cursor: default;
 }
 .sticky {
   position: fixed;

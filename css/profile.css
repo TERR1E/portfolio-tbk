@@ -262,6 +262,145 @@ nav .nav ul .dropdown .nav-dropdown .dropdown-link:hover {
     border-width: 0 0 1px 0;
   }
 }
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+main .about-me {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+  /* Firefox < 16 */
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+}
+main .about-me .about-pic {
+  width: 250px;
+  height: 312px;
+  -webkit-animation: fadein 0.7s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.7s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.7s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.7s;
+  /* Opera < 12.1 */
+  animation: fadein 0.7s;
+}
+@media (max-width: 400px) {
+  main .about-me .about-pic {
+    align-self: center;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main .about-me .about-intro {
+  width: 350px;
+  margin-left: 30px;
+  font-size: 14px;
+}
+@media (max-width: 400px) {
+  main .about-me .about-intro {
+    align-self: center;
+    margin: 40px 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  main .about-me {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 400px) {
+  main .about-me {
+    flex-direction: column;
+  }
+}
+main .contact-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 900px;
+  border: solid #bbb;
+  border-width: 0 0 1px 0;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+main .contact-me my-email::after {
+  content: attr(data-domain);
+}
+main .contact-me my-email::before {
+  content: attr(data-user) "\0040";
+}
+main .contact-me h3 {
+  font-size: 13px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+main .contact-me a {
+  font-size: 13px;
+  color: #f6797a;
+  text-decoration: none;
+}
+@media (max-width: 400px) {
+  main .contact-me .contact {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 768px) {
+  main .contact-me {
+    width: 650px;
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 400px) {
+  main .contact-me {
+    width: 375px;
+    flex-direction: column;
+    margin-bottom: 45px;
+    padding-bottom: 15px;
+  }
+}
 footer {
   display: flex;
   justify-content: center;

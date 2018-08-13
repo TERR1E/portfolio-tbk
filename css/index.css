@@ -261,3 +261,100 @@ nav .nav ul .dropdown .nav-dropdown .dropdown-link:hover {
     border-width: 0 0 1px 0;
   }
 }
+main {
+  display: flex;
+  flex-direction: column;
+  /* Firefox < 16 */
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+}
+main .jumbotron {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  align-self: center;
+  text-align: center;
+  padding: 200px 200px 10px 200px;
+  margin: 0px 0 200px 0;
+  font-size: 40px;
+  letter-spacing: 4px;
+  background-color: #f6797a;
+  color: #fff;
+  width: 600px;
+  cursor: default;
+  -webkit-animation: fadein 0.7s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.7s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.7s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.7s;
+  /* Opera < 12.1 */
+  animation: fadein 0.7s;
+}
+@media (max-width: 768px) {
+  main .jumbotron {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    align-self: center;
+    text-align: center;
+    padding: 200px 100px 10px 100px;
+    margin: 0 0 200px 0;
+    font-size: 40px;
+    letter-spacing: 4px;
+    background-color: #f6797a;
+    color: #fff;
+    width: 500px;
+    cursor: default;
+  }
+}
+@media (max-width: 400px) {
+  main .jumbotron {
+    width: 400px;
+    font-size: 15px;
+    padding: 75px 0 15px 0;
+    margin: 40px 0;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main .projects {
+  align-self: center;
+  margin: 0 0 100px 0;
+}
